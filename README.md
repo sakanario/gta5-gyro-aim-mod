@@ -10,7 +10,7 @@ GTA V ──(ScriptHookV)──> GyroAim.asi ──(shared memory)──> SISR f
 ```
 
 - **GyroAim.asi** (this repo) is a ScriptHookV plugin. Every frame it reads `IS_PLAYER_FREE_AIMING`, `IS_AIM_CAM_ACTIVE` and `IS_PED_IN_ANY_VEHICLE`, then publishes them to the shared memory `Local\GyroAimState`.
-- **The SISR fork** (branch `gtav-gyro-aim` of [Alia5/SISR](https://github.com/Alia5/SISR)) reads that state and mixes the gyro into the emulated right stick while you aim. It has a UI with sensitivity, power curve, minimum output, deadband, invert and gyro calibration.
+- **The SISR fork** ([sakanario/SISR, branch `gtav-gyro-aim`](https://github.com/sakanario/SISR/tree/gtav-gyro-aim), a fork of [Alia5/SISR](https://github.com/Alia5/SISR)) reads that state and mixes the gyro into the emulated right stick while you aim. It has a UI with sensitivity, power curve, minimum output, deadband, invert and gyro calibration.
 
 > Story Mode only. ScriptHookV closes the game in GTA Online.
 
@@ -18,7 +18,7 @@ GTA V ──(ScriptHookV)──> GyroAim.asi ──(shared memory)──> SISR f
 
 - GTA V Enhanced (tested on the Epic Games version, build 1.0.1158.x)
 - [ScriptHookV](http://www.dev-c.com/gtav/scripthookv/) build with Enhanced support (tested with v3889.0 / 1158.13)
-- Steam (for Steam Input) and the SISR fork with gyro aim
+- Steam (for Steam Input) and the [SISR gyro aim fork](https://github.com/sakanario/SISR/tree/gtav-gyro-aim)
 - A gyro controller, for example a Switch Pro Controller
 
 ## Install
